@@ -1,0 +1,267 @@
+Last login: Tue Feb 11 13:44:38 on ttys003
+maclab-83:Jones-Julia jones245$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-83:Jones-Julia jones245$ ls
+NavigationOutput_Alpha.txt	README.md			WhatIsTheShellOutput_Alpha.txt
+maclab-83:Jones-Julia jones245$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-83:Jones-Julia jones245$ cd
+maclab-83:~ jones245$ ls
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public		PycharmProjects
+maclab-83:~ jones245$ ls /usr
+bin		lib		libexec		local		sbin		share		standalone
+maclab-83:~ jones245$ ls ~ /usr
+/Users/jones245:
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public		PycharmProjects
+
+/usr:
+bin		lib		libexec		local		sbin		share		standalone
+maclab-83:~ jones245$ ls -l
+total 0
+drwx------+  5 jones245  UWP\Domain Users   160 Feb 11 15:24 Desktop
+drwx------+  3 jones245  UWP\Domain Users    96 Feb 11 15:06 Documents
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Downloads
+drwx------@ 60 jones245  UWP\Domain Users  1920 Feb 11 14:19 Library
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Movies
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Music
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Pictures
+drwxr-xr-x+  4 jones245  UWP\Domain Users   128 Feb  6 14:04 Public
+drwxr-xr-x   3 jones245  UWP\Domain Users    96 Feb  6 14:38 PycharmProjects
+maclab-83:~ jones245$ ls -lt
+total 0
+drwx------+  5 jones245  UWP\Domain Users   160 Feb 11 15:24 Desktop
+drwx------+  3 jones245  UWP\Domain Users    96 Feb 11 15:06 Documents
+drwx------@ 60 jones245  UWP\Domain Users  1920 Feb 11 14:19 Library
+drwxr-xr-x   3 jones245  UWP\Domain Users    96 Feb  6 14:38 PycharmProjects
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Downloads
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Movies
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Music
+drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Pictures
+drwxr-xr-x+  4 jones245  UWP\Domain Users   128 Feb  6 14:04 Public
+maclab-83:~ jones245$ ls -lt -reverse
+total 0
+0 drwxr-xr-x+  4 jones245  UWP\Domain Users   128 Feb  6 14:04 Public
+ 0: group:everyone deny delete
+0 drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Pictures
+ 0: group:everyone deny delete
+0 drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Music
+ 0: group:everyone deny delete
+0 drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Movies
+ 0: group:everyone deny delete
+0 drwx------+  3 jones245  UWP\Domain Users    96 Feb  6 14:04 Downloads
+ 0: group:everyone deny delete
+0 drwxr-xr-x   3 jones245  UWP\Domain Users    96 Feb  6 14:38 PycharmProjects
+0 drwx------@ 60 jones245  UWP\Domain Users  1920 Feb 11 14:19 Library
+ 0: group:everyone deny delete
+0 drwx------+  3 jones245  UWP\Domain Users    96 Feb 11 15:06 Documents
+ 0: group:everyone deny delete
+0 drwx------+  5 jones245  UWP\Domain Users   160 Feb 11 15:24 Desktop
+ 0: group:everyone deny delete
+maclab-83:~ jones245$ file pineapple.jpg
+pineapple.jpg: cannot open `pineapple.jpg' (No such file or directory)
+maclab-83:~ jones245$ file pineapple.jpeg
+pineapple.jpeg: cannot open `pineapple.jpeg' (No such file or directory)
+maclab-83:~ jones245$ file pineapple.jpg
+pineapple.jpg: cannot open `pineapple.jpg' (No such file or directory)
+maclab-83:~ jones245$ cd
+maclab-83:~ jones245$ ls
+Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public		PycharmProjects
+maclab-83:~ jones245$ ls /Desktop
+ls: /Desktop: No such file or directory
+maclab-83:~ jones245$ file picture.jpg
+picture.jpg: cannot open `picture.jpg' (No such file or directory)
+maclab-83:~ jones245$ less /etc/passwd
+maclab-83:~ jones245$ less /etc/passwd
+maclab-83:~ jones245$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
