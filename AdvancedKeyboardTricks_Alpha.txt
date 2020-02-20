@@ -1,0 +1,250 @@
+Last login: Thu Feb  6 14:04:45 on console
+maclab-83:~ jones245$ 
+maclab-83:~ jones245$ 
+maclab-83:~ jones245$ vljgbkh
+-bash: vljgbkh: command not found
+maclab-83:~ jones245$ date
+Thu Feb  6 14:49:12 CST 2020
+maclab-83:~ jones245$ cow
+-bash: cow: command not found
+maclab-83:~ jones245$ cal
+   February 2020      
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+                      
+maclab-83:~ jones245$ df
+Filesystem                                          512-blocks      Used Available Capacity  iused               ifree %iused  Mounted on
+/dev/disk1s1                                         322267088 259913584  56825464    83%  2018466 9223372036852757341    0%   /
+devfs                                                      377       377         0   100%      652                   0  100%   /dev
+/dev/disk1s4                                         322267088   4194344  56825464     7%        1 9223372036854775806    0%   /private/var/vm
+/dev/disk0s3                                         167352312  59393312 107959000    36%   270970            13495777    2%   /Volumes/BOOTCAMP
+map -hosts                                                   0         0         0   100%        0                   0  100%   /net
+map auto_home                                                0         0         0   100%        0                   0  100%   /home
+map -fstab                                                   0         0         0   100%        0                   0  100%   /Network/Servers
+//gilbe016@uwpfs.ad.uwp.edu/Home/Student/g/gilbe016    2097152        24   2097128     1%        1              262141    0%   /Volumes/gilbe016
+//jones245@uwpfs.ad.uwp.edu/Home                     293392368 186939800 106452568    64% 23367473            13306571   64%   /Volumes/Home
+maclab-83:~ jones245$ xvm_stat
+-bash: xvm_stat: command not found
+maclab-83:~ jones245$ vm_stat
+Mach Virtual Memory Statistics: (page size of 4096 bytes)
+Pages free:                               51979.
+Pages active:                           1721658.
+Pages inactive:                         1708730.
+Pages speculative:                        17504.
+Pages throttled:                              0.
+Pages wired down:                        605033.
+Pages purgeable:                           9535.
+"Translation faults":                 318607271.
+Pages copy-on-write:                    9475894.
+Pages zero filled:                    163662110.
+Pages reactivated:                       235265.
+Pages purged:                             83175.
+File-backed pages:                      1539897.
+Anonymous pages:                        1907995.
+Pages stored in compressor:              195074.
+Pages occupied by compressor:             88992.
+Decompressions:                           35606.
+Compressions:                            240244.
+Pageins:                                5470328.
+Pageouts:                                   965.
+Swapins:                                      0.
+Swapouts:                                     0.
+maclab-83:~ jones245$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+[Process completed]
+
+  [Restored Feb 11, 2020 at 1:44:38 PM]
+Last login: Tue Feb 11 13:44:36 on console
+Restored session: Thu Feb  6 14:53:08 CST 2020
+maclab-83:~ jones245$ 
+  [Restored Feb 13, 2020 at 2:03:47 PM]
+Last login: Thu Feb 13 14:03:44 on console
+maclab-83:~ jones245$ 
+  [Restored Feb 18, 2020 at 2:05:15 PM]
+Last login: Tue Feb 18 14:02:35 on console
+Restored session: Thu Feb 13 15:39:54 CST 2020
+maclab-83:~ jones245$ clear
+
+maclab-83:~ jones245$ ls -l /usr/bin > ls-output.txt
+maclab-83:~ jones245$ ls -l ls-output.txt
+-rw-r--r--  1 jones245  UWP\Domain Users  64026 Feb 18 14:06 ls-output.txt
+maclab-83:~ jones245$ less ls-output.txt
+maclab-83:~ jones245$ ls -l /bin/usr > ls-output.txt
+ls: /bin/usr: No such file or directory
+maclab-83:~ jones245$ ls -l lk-output.txt
+ls: lk-output.txt: No such file or directory
+maclab-83:~ jones245$ ls -l ls-output.txt
+-rw-r--r--  1 jones245  UWP\Domain Users  0 Feb 18 14:07 ls-output.txt
+maclab-83:~ jones245$ > ls-output.txt
+maclab-83:~ jones245$ ls -l /usr/bin >> ls-output.txt
+maclab-83:~ jones245$ ls -l /usr/bin >> ls-output.txt
+maclab-83:~ jones245$ ls -l /usr/bin >> ls-output.txt
+maclab-83:~ jones245$ ls -l ls-output.txt
+-rw-r--r--  1 jones245  UWP\Domain Users  192078 Feb 18 14:10 ls-output.txt
+maclab-83:~ jones245$ ls -l /bin/usr 2> ls-error.txt
+maclab-83:~ jones245$ ls -l /bin/usr > ls-output.txt 2>&1
+maclab-83:~ jones245$ ls -l /bin/usr &>ls-output.txt
+maclab-83:~ jones245$ ls -l /bin/usr &>>ls-output.txt
+-bash: syntax error near unexpected token `>'
+maclab-83:~ jones245$ ls -l /bin/usr &> ls-output.txt
+maclab-83:~ jones245$ ls -l /bin/usr &>> ls-output.txt
+-bash: syntax error near unexpected token `>'
+maclab-83:~ jones245$ ls -l /bin/usr 2> /dev/null
+maclab-83:~ jones245$ cat ls-output.txt
+ls: /bin/usr: No such file or directory
+maclab-83:~ jones245$ cat movie.mpeg.0* >movie.mpeg
+cat: movie.mpeg.0*: No such file or directory
+maclab-83:~ jones245$ cat
+the quick brown fox jumped over the lazy dog
+the quick brown fox jumped over the lazy dog
+cat > lazy_dog.txt
+cat > lazy_dog.txt
+cat > lazy_dog.txtcat > lazy_dog.txt
+
+cat lazy_dog.txt
+cat lazy_dog.txt
+cat > lazy_dog.txt
+cat > lazy_dog.txt
+cat >lazy_dog.txtcat >lazy_dog.txt
+
+The quick brown fox jumped over the lazy dog
+The quick brown fox jumped over the lazy dog
+cat > lazy_dog.txt The quick brown fox jumped over the lazy dog 
+cat > lazy_dog.txt The quick brown fox jumped over the lazy dog
+cat < lazy_dog.txt
+cat < lazy_dog.txt
+^C
+maclab-83:~ jones245$ cat
+the 
+the 
+^C
+maclab-83:~ jones245$ cat > lazy_dog.txt
+The quick brown fox jumped over the lazy dog
+maclab-83:~ jones245$ cat lazy_dog.txt
+The quick brown fox jumped over the lazy dog
+maclab-83:~ jones245$ cat < lazy_dog.txt
+The quick brown fox jumped over the lazy dog
+maclab-83:~ jones245$ ls -l /usr/bin | less
+maclab-83:~ jones245$ ls /bin /usr/bin | sort | less
+maclab-83:~ jones245$ ls /bin /usr/bin | sort | uniq | less
+maclab-83:~ jones245$ ls /bin /usr/bin | sort | uniq -d | less
+maclab-83:~ jones245$ wc ls-output.txt
+       1       7      40 ls-output.txt
+maclab-83:~ jones245$ ls /bin /usr/bin | sort | uniq | wc -l
+    1007
+maclab-83:~ jones245$ ls /bin /usr/bin | sort | uniq | grep zip
+bunzip2
+bzip2
+bzip2recover
+funzip
+gunzip
+gzip
+unzip
+unzipsfx
+zip
+zipcloak
+zipdetails
+zipdetails5.18
+zipgrep
+zipinfo
+zipnote
+zipsplit
+maclab-83:~ jones245$ head -n 5 ls-output.txt
+ls: /bin/usr: No such file or directory
+maclab-83:~ jones245$ tail -n 5 ls-output.txt
+ls: /bin/usr: No such file or directory
+maclab-83:~ jones245$ ls /usr/bin | tail -n 5
+zipsplit
+zless
+zmore
+znew
+zprint
+maclab-83:~ jones245$ tail -f /var/log/messages
+tail: /var/log/messages: No such file or directory
+maclab-83:~ jones245$ ls /usr/bin | tee ls.txt | grep zip
+bunzip2
+bzip2
+bzip2recover
+funzip
+gunzip
+gzip
+unzip
+unzipsfx
+zip
+zipcloak
+zipdetails
+zipdetails5.18
+zipgrep
+zipinfo
+zipnote
+zipsplit
+maclab-83:~ jones245$ clear
+
+maclab-83:~ jones245$ ls 
+Desktop		Downloads	Movies		Pictures	PycharmProjects	ls-error.txt	ls.txt
+Documents	Library		Music		Public		lazy_dog.txt	ls-output.txt	movie.mpeg
+maclab-83:~ jones245$ ls l
+lazy_dog.txt   ls-error.txt   ls-output.txt  ls.txt         
+maclab-83:~ jones245$ ls D
+Desktop/   Documents/ Downloads/ 
+maclab-83:~ jones245$ ls Do
+ls: Do: No such file or directory
+maclab-83:~ jones245$ ls Do
+Documents/ Downloads/ 
+maclab-83:~ jones245$ history | less
+maclab-83:~ jones245$ history | grep /usr/bin
+   32  cd /usr/bin
+   35  cd /usr/bin
+   43  cd /usr/bin
+  144  ls -l /usr/bin > ls-output.txt
+  151  ls -l /usr/bin >> ls-output.txt
+  152  ls -l /usr/bin >> ls-output.txt
+  153  ls -l /usr/bin >> ls-output.txt
+  169  ls -l /usr/bin | less
+  170  ls /bin /usr/bin | sort | less
+  171  ls /bin /usr/bin | sort | uniq | less
+  172  ls /bin /usr/bin | sort | uniq -d | less
+  174  ls /bin /usr/bin | sort | uniq | wc -l
+  175  ls /bin /usr/bin | sort | uniq | grep zip
+  178  ls /usr/bin | tail -n 5
+  180  ls /usr/bin | tee ls.txt | grep zip
+  185  history | grep /usr/bin
+maclab-83:~ jones245$ !88
+git push
+fatal: not a git repository (or any of the parent directories): .git
+maclab-83:~ jones245$ cat < lazy_dog.txt
+The quick brown fox jumped over the lazy dog
+maclab-83:~ jones245$ cat < lazy_dog.txt
+The quick brown fox jumped over the lazy dog
+maclab-83:~ jones245$ 
+(reverse-i-search)`': cat < lazy_dog.txt
+maclab-83:~ jones245$ history | grep /usr/bin
+   32  cd /usr/bin
+   35  cd /usr/bin
+   43  cd /usr/bin
+  144  ls -l /usr/bin > ls-output.txt
+  151  ls -l /usr/bin >> ls-output.txt
+  152  ls -l /usr/bin >> ls-output.txt
+  153  ls -l /usr/bin >> ls-output.txt
+  169  ls -l /usr/bin | less
+  170  ls /bin /usr/bin | sort | less
+  171  ls /bin /usr/bin | sort | uniq | less
+  172  ls /bin /usr/bin | sort | uniq -d | less
+  174  ls /bin /usr/bin | sort | uniq | wc -l
+  175  ls /bin /usr/bin | sort | uniq | grep zip
+  178  ls /usr/bin | tail -n 5
+  180  ls /usr/bin | tee ls.txt | grep zip
+  185  history | grep /usr/bin
+  189  history | grep /usr/bin
+maclab-83:~ jones245$ ls -l /usr/bin > ls-output.txt
+maclab-83:~ jones245$ 
