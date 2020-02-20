@@ -1,0 +1,115 @@
+Last login: Thu Feb 13 14:01:54 on console
+maclab-61:~ klige002$ cd
+maclab-61:~ klige002$ mkdir playground
+maclab-61:~ klige002$ cd playground
+maclab-61:playground klige002$ mkdir dir1 dir2
+maclab-61:playground klige002$ cp /etc/passwd
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+maclab-61:playground klige002$ cp /etc/passwd .
+maclab-61:playground klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:playground klige002$ cd
+maclab-61:~ klige002$ mkdir playground
+mkdir: playground: File exists
+maclab-61:~ klige002$ cd playground
+maclab-61:playground klige002$ mkdir dir1 dir2
+mkdir: dir1: File exists
+mkdir: dir2: File exists
+maclab-61:playground klige002$ cp /etc/passwd .
+maclab-61:playground klige002$ ls -l
+total 16
+drwxr-xr-x  2 klige002  UWP\Domain Users    64 Feb 13 14:29 dir1
+drwxr-xr-x  2 klige002  UWP\Domain Users    64 Feb 13 14:29 dir2
+-rw-r--r--  1 klige002  UWP\Domain Users  6804 Feb 13 14:31 passwd
+maclab-61:playground klige002$ cp -v /etc/passwd .
+/etc/passwd -> ./passwd
+maclab-61:playground klige002$ cp -i /etc/passwd .
+overwrite ./passwd? (y/n [n]) n
+not overwritten
+maclab-61:playground klige002$ mv passwd fun
+maclab-61:playground klige002$ mv fun dir1
+maclab-61:playground klige002$ mv dir1/fun dir2
+maclab-61:playground klige002$ mv dir2/fun .
+maclab-61:playground klige002$ mv fun dir1
+maclab-61:playground klige002$ mv dir1 dir2
+maclab-61:playground klige002$ ls -l dir2
+total 0
+drwxr-xr-x  3 klige002  UWP\Domain Users  96 Feb 13 14:36 dir1
+maclab-61:playground klige002$ ls -l dir2/dir1
+total 16
+-rw-r--r--  1 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun
+maclab-61:playground klige002$ mv dir2/dir1 .
+maclab-61:playground klige002$ mv dir1/fun .
+maclab-61:playground klige002$ ln fun fun-hard
+maclab-61:playground klige002$ ln fun dir1/fun-hard
+maclab-61:playground klige002$ ln fun dir2/fun-hard
+maclab-61:playground klige002$ ls -l
+total 32
+drwxr-xr-x  3 klige002  UWP\Domain Users    96 Feb 13 14:45 dir1
+drwxr-xr-x  3 klige002  UWP\Domain Users    96 Feb 13 14:45 dir2
+-rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun
+-rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun-hard
+maclab-61:playground klige002$ ls -li
+total 32
+4898190 drwxr-xr-x  3 klige002  UWP\Domain Users    96 Feb 13 14:45 dir1
+4898191 drwxr-xr-x  3 klige002  UWP\Domain Users    96 Feb 13 14:45 dir2
+4898201 -rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun
+4898201 -rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun-hard
+maclab-61:playground klige002$ ln -s fun fun-sym
+maclab-61:playground klige002$ ln -s ../fun dir1/fun-sym
+maclab-61:playground klige002$ ln -s ../fun dir2/fun-sym
+maclab-61:playground klige002$ ls -l dir1
+total 16
+-rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun-hard
+lrwxr-xr-x  1 klige002  UWP\Domain Users     6 Feb 13 14:52 fun-sym -> ../fun
+maclab-61:playground klige002$ ln -s dir1 dir1-sym
+maclab-61:playground klige002$ ls -l
+total 32
+drwxr-xr-x  4 klige002  UWP\Domain Users   128 Feb 13 14:52 dir1
+lrwxr-xr-x  1 klige002  UWP\Domain Users     4 Feb 13 14:57 dir1-sym -> dir1
+drwxr-xr-x  4 klige002  UWP\Domain Users   128 Feb 13 14:53 dir2
+-rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun
+-rw-r--r--  4 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun-hard
+lrwxr-xr-x  1 klige002  UWP\Domain Users     3 Feb 13 14:52 fun-sym -> fun
+maclab-61:playground klige002$ rm fun-hard
+maclab-61:playground klige002$ ls -l
+total 16
+drwxr-xr-x  4 klige002  UWP\Domain Users   128 Feb 13 14:52 dir1
+lrwxr-xr-x  1 klige002  UWP\Domain Users     4 Feb 13 14:57 dir1-sym -> dir1
+drwxr-xr-x  4 klige002  UWP\Domain Users   128 Feb 13 14:53 dir2
+-rw-r--r--  3 klige002  UWP\Domain Users  6804 Feb 13 14:32 fun
+lrwxr-xr-x  1 klige002  UWP\Domain Users     3 Feb 13 14:52 fun-sym -> fun
+maclab-61:playground klige002$ rm -i fun
+remove fun? y
+maclab-61:playground klige002$ ls -l
+total 0
+drwxr-xr-x  4 klige002  UWP\Domain Users  128 Feb 13 14:52 dir1
+lrwxr-xr-x  1 klige002  UWP\Domain Users    4 Feb 13 14:57 dir1-sym -> dir1
+drwxr-xr-x  4 klige002  UWP\Domain Users  128 Feb 13 14:53 dir2
+lrwxr-xr-x  1 klige002  UWP\Domain Users    3 Feb 13 14:52 fun-sym -> fun
+maclab-61:playground klige002$ less fun-sym
+fun-sym: No such file or directory
+maclab-61:playground klige002$ rm fun-sym dir1-sym
+maclab-61:playground klige002$ ls-l
+-bash: ls-l: command not found
+maclab-61:playground klige002$ ls -l
+total 0
+drwxr-xr-x  4 klige002  UWP\Domain Users  128 Feb 13 14:52 dir1
+drwxr-xr-x  4 klige002  UWP\Domain Users  128 Feb 13 14:53 dir2
+maclab-61:playground klige002$ cd
+maclab-61:~ klige002$ rm -r playground
+maclab-61:~ klige002$ 
