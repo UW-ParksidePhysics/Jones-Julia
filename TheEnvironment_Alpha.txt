@@ -1,0 +1,214 @@
+Last login: Thu Feb 20 14:01:16 on console
+maclab-61:~ klige002$ ps
+  PID TTY           TIME CMD
+27917 ttys000    0:00.01 -bash
+maclab-61:~ klige002$ top
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ jobs
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ man ps
+maclab-61:~ klige002$ man fg
+maclab-61:~ klige002$ fg
+-bash: fg: current: no such job
+maclab-61:~ klige002$ xlogo
+-bash: xlogo: command not found
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ cd
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ xload
+-bash: xload: command not found
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ tload
+-bash: tload: command not found
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ printenv | less
+maclab-61:~ klige002$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+maclab-61:~ klige002$ printenv | less
+maclab-61:~ klige002$ printenv USER
+klige002
+maclab-61:~ klige002$ set | less
+maclab-61:~ klige002$ echo $HOME
+/Users/klige002
+maclab-61:~ klige002$ alias
+maclab-61:~ klige002$ foo="This is some"
+maclab-61:~ klige002$ echo $foo
+This is some
+maclab-61:~ klige002$ foo=$foo"text."
+maclab-61:~ klige002$ echo $foo
+This is sometext.
+maclab-61:~ klige002$ gedit some_file
+-bash: gedit: command not found
+maclab-61:~ klige002$ TextEdit some_file
+-bash: TextEdit: command not found
+maclab-61:~ klige002$ open -a TextEdit some_file
+The file /Users/klige002/some_file does not exist.
+maclab-61:~ klige002$ cp .bashrc .bashrc.bak
+cp: .bashrc: No such file or directory
+maclab-61:~ klige002$ alias
+maclab-61:~ klige002$ foo="This is some "
+maclab-61:~ klige002$ echo $foo
+This is some
+maclab-61:~ klige002$ foo=$foo"bullshit."
+maclab-61:~ klige002$ echo $foo
+This is some bullshit.
+maclab-61:~ klige002$ alias
+maclab-61:~ klige002$ foo="That was a test of how this works."
+maclab-61:~ klige002$ echo $foo
+That was a test of how this works.
+maclab-61:~ klige002$ nano .bashrc
+maclab-61:~ klige002$ cp .bashrc .bashrc.bak
+maclab-61:~ klige002$ nano .bashrc
+maclab-61:~ klige002$ nano .bashrc
+maclab-61:~ klige002$ source .bashrc
+maclab-61:~ klige002$ ll
+ls: illegal option -- -
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
+maclab-61:~ klige002$ l.
+ls: --color=auto: No such file or directory
+.			.CFUserTextEncoding	.Trash			.bash_sessions		.bashrc.bak		.viminfo
+..			.DS_Store		.bash_history		.bashrc			.lesshst
+maclab-61:~ klige002$ nano .bashrc
+maclab-61:~ klige002$ 
