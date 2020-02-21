@@ -1,0 +1,97 @@
+Last login: Thu Feb 13 16:09:24 on console
+maclab-61:~ klige002$ type type
+type is a shell builtin
+maclab-61:~ klige002$ type ls
+ls is /bin/ls
+maclab-61:~ klige002$ type cp
+cp is /bin/cp
+maclab-61:~ klige002$ which ls
+/bin/ls
+maclab-61:~ klige002$ which cd
+/usr/bin/cd
+maclab-61:~ klige002$ type cd
+cd is a shell builtin
+maclab-61:~ klige002$ help cd
+cd: cd [-L|-P] [dir]
+    Change the current directory to DIR.  The variable $HOME is the
+    default DIR.  The variable CDPATH defines the search path for
+    the directory containing DIR.  Alternative directory names in CDPATH
+    are separated by a colon (:).  A null directory name is the same as
+    the current directory, i.e. `.'.  If DIR begins with a slash (/),
+    then CDPATH is not used.  If the directory is not found, and the
+    shell option `cdable_vars' is set, then try the word as a variable
+    name.  If that variable has a value, then cd to the value of that
+    variable.  The -P option says to use the physical directory structure
+    instead of following symbolic links; the -L option forces symbolic links
+    to be followed.
+maclab-61:~ klige002$ mkdir --help
+mkdir: illegal option -- -
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-61:~ klige002$ mkdir -help
+mkdir: illegal option -- h
+usage: mkdir [-pv] [-m mode] directory ...
+maclab-61:~ klige002$ man ls
+maclab-61:~ klige002$ man mkdir
+maclab-61:~ klige002$ man cd
+maclab-61:~ klige002$ man alias
+maclab-61:~ klige002$ man cd
+maclab-61:~ klige002$ man 5 passwd
+maclab-61:~ klige002$ apropos floppy
+floppy: nothing appropriate
+maclab-61:~ klige002$ apropos disk
+DiskUnmountWatcher(8)    - watches for disk unmount and remove cached credentials
+FDERecoveryAgent(8)      - Full Disk Encryption Key Recovery Transmission Agent
+UnmountAssistantAgent(8) - Provides help when a disk can't be ejected
+asr(8)                   - Apple Software Restore; copy volumes (e.g. from disk images)
+attach_automation_image(8), -(8) - ."====================== attach_automation_image attach and initialize disk images for automation_trampoline(8) ." ."
+autodiskmount(8)         - disk support tool
+bitesize.d(1m)           - analyse disk I/O size by process. Uses DTrace
+bless(8)                 - set volume bootability and startup disk options
+df(1)                    - display free disk space
+diskarbitrationd(8)      - disk arbitration daemon
+disklabel(8)             - manipulate and query an Apple Label disk label
+diskmanagementd(8)       - DiskManagement.framework server
+diskmanagementstartup(8) - DiskManagement.framework helper tool
+disktool(8)              - disk support tool
+diskutil(8)              - modify, verify and repair local disks
+dmc(1)                   - controls the Disk Mount Conditioner
+du(1)                    - display disk usage statistics
+fdisk(8)                 - DOS partition maintenance program
+hdid(8)                  - historical mechanism for attaching disk images
+hdiejectd(8)             - disk image management daemon
+hdik(8)                  - lightweight tool to attach and mount disk images in-kernel
+hdiutil(1)               - manipulate disk images (attach, verify, create, etc)
+maclab-61:~ klige002$ man 1 df
+maclab-61:~ klige002$ whatis ls
+builtin(1), !(1), %(1), .(1), :(1), @(1), {(1), }(1), alias(1), alloc(1), bg(1), bind(1), bindkey(1), break(1), breaksw(1), builtins(1), case(1), cd(1), chdir(1), command(1), complete(1), continue(1), default(1), dirs(1), do(1), done(1), echo(1), echotc(1), elif(1), else(1), end(1), endif(1), endsw(1), esac(1), eval(1), exec(1), exit(1), export(1), false(1), fc(1), fg(1), filetest(1), fi(1), for(1), foreach(1), getopts(1), glob(1), goto(1), hash(1), hashstat(1), history(1), hup(1), if(1), jobid(1), jobs(1), kill(1), limit(1), local(1), log(1), login(1), logout(1), ls-F(1), nice(1), nohup(1), notify(1), onintr(1), popd(1), printenv(1), pushd(1), pwd(1), read(1), readonly(1), rehash(1), repeat(1), return(1), sched(1), set(1), setenv(1), settc(1), setty(1), setvar(1), shift(1), source(1), stop(1), suspend(1), switch(1), telltc(1), test(1), then(1), time(1), times(1), trap(1), true(1), type(1), ulimit(1), umask(1), unalias(1), uncomplete(1), unhash(1), unlimit(1), unset(1), unsetenv(1), until(1), wait(1), where(1), which(1), while(1) - shell built-in commands
+ls(1)                    - list directory contents
+maclab-61:~ klige002$ whatis mkdir
+mkdir(1)                 - make directories
+maclab-61:~ klige002$ whatis cp
+cp(1)                    - copy files
+maclab-61:~ klige002$ info coreutils
+maclab-61:~ klige002$ cd /usr; ls; cd -
+bin		lib		libexec		local		sbin		share		standalone
+/Users/klige002
+maclab-61:~ klige002$ type test
+test is a shell builtin
+maclab-61:~ klige002$ type foo
+-bash: type: foo: not found
+maclab-61:~ klige002$ alias foo='cd /usr; ls; cd -'
+maclab-61:~ klige002$ foo
+bin		lib		libexec		local		sbin		share		standalone
+/Users/klige002
+maclab-61:~ klige002$ type foo
+foo is aliased to `cd /usr; ls; cd -'
+maclab-61:~ klige002$ ualias foo
+-bash: ualias: command not found
+maclab-61:~ klige002$ unalias foo
+maclab-61:~ klige002$ type foo
+-bash: type: foo: not found
+maclab-61:~ klige002$ type ls
+ls is hashed (/bin/ls)
+maclab-61:~ klige002$ alias
+maclab-61:~ klige002$ man alias
+maclab-61:~ klige002$ man info
+maclab-61:~ klige002$ info alias
+maclab-61:~ klige002$ 
