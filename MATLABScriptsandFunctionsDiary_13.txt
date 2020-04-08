@@ -1,0 +1,258 @@
+diary on
+A = [1 2 3; 3 3 4; 2 3 3];
+b = [1; 1; 2];
+x = A\b
+
+x =
+
+   -0.5000
+    1.5000
+   -0.5000
+
+example1
+
+x =
+
+   -0.5000
+    1.5000
+   -0.5000
+
+x = 0:pi/100:2*pi;
+y1 = 2*cos(x);
+y2 = cos(x);
+y3 = 0.5*cos(x);
+plot(x,y1,’--’,x,y2,’-’,x,y3,’:’)
+ plot(x,y1,’--’,x,y2,’-’,x,y3,’:’)
+           ↑
+{Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of
+non-ASCII characters.
+} 
+example2
+{Error: <a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\example2.m',8,19)">File: example2.m Line: 8 Column: 19</a>
+Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+example2
+example3
+Enter the points scored in the first game15
+Enter the points scored in the second game 23
+Enter the points scored in the second game 10
+
+average =
+
+    16
+
+exercise1
+
+x =
+
+    1.7837
+    0.8277
+    0.4603
+
+exercise1
+
+x =
+
+    0.3150    0.1179    0.7397
+
+exercise1
+{Error: <a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,7)">File: exercise1.m Line: 3 Column: 7</a>
+Invalid use of operator.
+} 
+exercise1
+
+x =
+
+    0.0071
+    0.0012
+    0.0218
+
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check that the number of columns in the first matrix
+matches the number of rows in the second matrix. To perform elementwise multiplication, use '.*'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = inv(z)*y
+} 
+exercise1
+{Unrecognized function or variable 'INV'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = INV(z)*y
+} 
+exercise1
+
+x =
+
+    1.7837
+    0.8277
+    0.4603
+
+exercise1
+
+x =
+
+    0.3150    0.1179    0.7397
+
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = z/y
+} 
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = z/y
+} 
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = z/y
+} 
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = z/y
+} 
+exercise2
+Enter temperature in Farenheit 32
+
+c =
+
+  -14.2222
+
+exercise2
+Enter temperature in Farenheit: 32
+
+c =
+
+     0
+
+exercise1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mrdivide')" style="font-weight:bold"> / </a>
+Matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise1', 'C:\Users\msben\Documents\MATLAB\exercise1.m', 3)" style="font-weight:bold">exercise1</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise1.m',3,0)">line 3</a>)
+x = z/y
+} 
+exercise1
+
+x =
+
+    0.2900
+    0.0500
+    0.8900
+
+exercise3
+Enter how many feet tall you are: 5
+Enter the excess inches: 4
+Enter weight in pounds: 130
+
+cm =
+
+   11.2183
+
+
+kg =
+
+   59.0200
+
+exercise3
+{Error: <a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise3.m',4,36)">File: exercise3.m Line: 4 Column: 36</a>
+Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check
+for mismatched delimiters.
+} 
+exercise3
+{Error: <a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise3.m',4,36)">File: exercise3.m Line: 4 Column: 36</a>
+Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+exercise3
+{Error: <a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise3.m',4,36)">File: exercise3.m Line: 4 Column: 36</a>
+Invalid expression. Check for missing multiplication operator, missing or unbalanced delimiters, or
+other syntax error. To construct matrices, use brackets instead of parentheses.
+} 
+exercise3
+Enter how many feet tall you are: 5
+Enter the excess inches: 15
+Enter weight in pounds: 180
+
+cm =
+
+  190.5000
+
+
+kg =
+
+   81.7200
+
+exercise3
+Enter how many feet tall you are: 5
+Enter the excess inches: 7
+Enter weight in pounds: 180
+
+cm =
+
+  170.1800
+
+
+kg =
+
+   81.7200
+
+exercise2
+Enter temperature in Farenheit: 32
+
+c =
+
+     0
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+No format character vector.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exercise2', 'C:\Users\msben\Documents\MATLAB\exercise2.m', 3)" style="font-weight:bold">exercise2</a> (<a href="matlab: opentoline('C:\Users\msben\Documents\MATLAB\exercise2.m',3,0)">line 3</a>)
+fprintf (F)
+} 
+exercise2
+Enter temperature in Farenheit: 32
+
+C =
+
+     0
+
+
+formatspec =
+
+    '%f degrees Farenheit is equal to %f degree centigrade'
+
+32.000000 degrees Farenheit is equal to 0.000000 degree centigradeexercise2
+Enter temperature in Farenheit: 32
+
+C =
+
+     0
+
+
+formatspec =
+
+    '%4.2f degrees Farenheit is equal to %4.2f degree centigrade'
+
+32.00 degrees Farenheit is equal to 0.00 degree centigradeexercise2
+Enter temperature in Farenheit: 32
+
+C =
+
+     0
+
+32.00 degrees Farenheit is equal to 0.00 degree centigrade
+diary off
