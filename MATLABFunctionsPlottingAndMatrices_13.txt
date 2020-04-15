@@ -1,0 +1,176 @@
+%ex1
+a=5; x=2; y=8;
+y= exp(-a)*sin(x)+10*sqrt(y)
+
+%ex2
+log(142)
+
+%ex3
+log10(142)
+
+%ex4
+sin(pi/4)
+
+%ex5
+exp(10)
+
+%ex6
+x= [1 2 3 4 5 6];
+y= [3 -1 2 3 4 1];
+plot(x,y)
+
+%ex7
+x= 0:pi/100:2*pi
+y= sin(x)
+plot(x,y)
+xlabel('x= 0:2\pi')
+ylabel('sine of x')
+title('plot of the sine function')
+plot(x,y, 'r')
+
+%ex8
+x= 0:pi/100:2*pi;
+y1= 2*cos(x);
+y2= cos(x);
+y3= 0.5*cos(x);
+plot(x,y1,'--',x,y2,'-',x,y3,':')
+xlabel('0 \leq x \leq 2\pi')
+ylabel('cosine functions')
+legend('2*cos(x)','cos(x)','0.5*cos(x)')
+title('Typical example of multiple plots')
+axis([0 2*pi -3 3])
+
+%ex9
+v= [1 4 7 10 13]
+w= [1;4;7;10;13]
+
+%ex10
+w=v'
+
+%ex11
+v(1:3)
+v(3:end)
+
+%ex12
+v(:)
+v(1:end)
+
+%ex13
+A= [1 2 3; 4 5 6; 7 8 9]
+A(2,1)
+
+%ex14
+A(3,3)= 0
+
+%ex15
+x = [0:0.1:5]
+
+%ex16
+theta= linspace(0,2*pi,101)
+
+%ex17
+A(2,:)
+A(:,2:3)
+A(:,2)=[]
+
+%ex18
+A= [1 2 3; 4 5 6; 7 8 9]
+A(3,3)=0
+B= A([2 3], [1 2])
+C= A([2 1 3],:)
+
+%ex19
+A(:)
+
+%ex20
+A
+A(2:3,2:3)
+A(end:-1:1,end)
+A([1 3],[2 3])
+
+%ex21
+A(3,:)= []
+A= [A(1,:);A(2,:);[7 8 0]]
+
+%ex22
+size(A)
+[m,n]=size(A)
+
+%ex23
+A'
+A = [1 2 3; 4 5 6; 7 8 9]
+B = [A 10*A; -A [1 0 0; 0 1 0; 0 0 1]]
+
+%ex24
+b=ones(3,1)
+b=[1;1;1]
+eye(3)
+c=zeros(2,3)
+c= [1 2; 3 4]
+d = [c zeros(2); ones(2) eye(2)]
+
+%problem 2
+x= 0:0.005:10;
+y1 = (1 / (0.5 * sqrt(2 * pi))) * exp((-1 / 2) * ((x - 5) / 0.5).^2);
+y2 = (1 / (1.0 * sqrt(2 * pi))) * exp((-1 / 2) * ((x - 5) / 1.0).^2);
+y3 = (1 / (1.5 * sqrt(2 * pi))) * exp((-1 / 2) * ((x - 5) / 1.5).^2);
+plot(x,y1, 'c:', x, y2, 'm-', x,y3, 'k--')
+xlabel('0 \leq x \leq 10')
+ylabel('Î¦(x-5,Ïƒ)')
+legend('Ïƒ1 = 0.5','Ïƒ2 = 1.0','Ïƒ3 = 1.5')
+title('Problem 2')
+axis ([0, 10, 0, 1])
+
+%problem 3
+A= zeros(5,5)
+
+n=1
+for n = 1:5
+    A(n,n)=2
+    n = n+1
+end
+n=1
+for n = 1:4
+    A(n,n+1)= 1
+    A(n+1,n) =1
+    n= n+1
+end
+
+H = (1 / (2 * (1 / (5 - 1)).^2))*A
+
+[C,D]= eig(H)
+
+B= C(5,:)
+x= linspace(1/(5+1), 5/(5+1), 5);
+y = sqrt(2) *sin(pi*x)
+plot(x,B, x,y)
+axis([0,1, -2, 2])
+
+%problem 4
+
+A = zeros(10, 10)
+
+n = 1
+for n= 1:10
+    A(n, n) = 2
+    n = n + 1
+end
+n = 1
+for n= 1:9
+    A(n, n+1) = 1
+    A(n+1, n) = 1
+    n = n + 1
+end
+
+npoints= input('enter npoints: ')
+w = npoints
+
+H = (1 / (2 * (1 / (w - 1)).^2)) * A
+
+[C, D] = eig(H)
+
+B = C(10, :)
+x = linspace(1/(w+1), w/(w+1), w);
+y = sqrt(2) * sin(pi * x)
+plot(x, B, x, y)
+axis([0, 1, -2, 2])
