@@ -36,8 +36,8 @@ def square_matrix():  # Generates a square matrix to test
     H = (1 / (1 / 9)) * A
     return H
 
-
-def lowest_eigenvectors(square_matrix, number_of_eigenvectors=3):
+#change starting_index to nothing and ending_index to number_of_eigenvectors
+def lowest_eigenvectors(square_matrix, starting_index, ending_index):
     from numpy import linalg, linspace, sqrt, sin, pi, sum, sort, argsort
 
     M_rows = len(square_matrix)
@@ -50,6 +50,6 @@ def lowest_eigenvectors(square_matrix, number_of_eigenvectors=3):
 
     (V, D) = linalg.eig(square_matrix)
     ordered_indices = argsort(V)
-    eigenvalues = (V[ordered_indices[0:number_of_eigenvectors]])
-    eigenvectors = (D[ordered_indices[0:number_of_eigenvectors]])
+    eigenvalues = (V[ordered_indices[starting_index:ending_index]]) #[0:number_of_eigenvectors]
+    eigenvectors = (D[ordered_indices[starting_index:ending_index]]) #^^^
     return eigenvalues, eigenvectors
